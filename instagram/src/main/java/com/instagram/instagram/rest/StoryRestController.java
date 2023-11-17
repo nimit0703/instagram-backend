@@ -43,7 +43,7 @@ public class StoryRestController {
         if (stories != null) {
             return new ResponseEntity<>(stories, HttpStatus.OK);
         } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
     }

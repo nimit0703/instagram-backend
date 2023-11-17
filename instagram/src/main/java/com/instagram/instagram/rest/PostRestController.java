@@ -40,7 +40,7 @@ public class PostRestController {
             List<Post> posts = postDao.findByBelongsTo(uid);
             return new ResponseEntity<>(posts,HttpStatus.OK);
         }catch(Exception e){
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }
