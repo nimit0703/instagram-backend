@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.instagram.instagram.dao.HighlightDao;
 import com.instagram.instagram.entity.Highlight;
 
-import jakarta.persistence.EntityNotFoundException;
-
 @RestController
 @RequestMapping("/api/hl")
 public class HighlightRestController {
